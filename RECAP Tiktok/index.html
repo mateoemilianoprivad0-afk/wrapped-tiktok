@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TikTok Wrapped (Fan)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <!-- Pantallas (carrusel) -->
+    <section class="screen active" id="screen-0">
+      <div class="card">
+        <h1 class="big">TikTok Wrapped</h1>
+        <p class="muted">Versión fan / portfolio</p>
+        <p class="hint">Tocá <b>Siguiente</b> para ver tus stats 👇</p>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-1">
+      <div class="card">
+        <h2 class="title">Tu vibra del año</h2>
+        <p class="subtitle">“Modo scroll infinito”</p>
+        <div class="pill">🔥 2025 en una palabra: <b>Constancia</b></div>
+      </div>
+    </section>
+
+    <!-- PANTALLA RACHA -->
+    <section class="screen" id="screen-streak">
+      <div class="card">
+        <div class="top">
+          <span class="badge" id="streak-badge">3D</span>
+          <span class="tag" id="streak-tag">con @usuario</span>
+        </div>
+
+        <h2 class="title">Tu mayor racha</h2>
+
+        <div class="counter">
+          <span id="streak-number">0</span>
+          <span class="unit">días</span>
+        </div>
+
+        <p class="subtitle" id="streak-subtitle">—</p>
+
+        <div class="meter">
+          <div class="meter-fill" id="streak-meter"></div>
+        </div>
+
+        <p class="comment" id="streak-comment">—</p>
+      </div>
+    </section>
+
+    <section class="screen" id="screen-3">
+      <div class="card">
+        <h2 class="title">Fin del Wrapped</h2>
+        <p class="subtitle">¿Lo compartimos como video? 😈</p>
+        <p class="muted">Podemos agregar más pantallas después (top categorías, horas, etc.)</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Controles -->
+  <footer class="controls">
+    <button id="prevBtn" class="btn ghost" type="button">Atrás</button>
+    <div class="dots" id="dots"></div>
+    <button id="nextBtn" class="btn" type="button">Siguiente</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
